@@ -1,0 +1,10 @@
+<launch>
+  <!--<node pkg="tango_msgs" type="infrareds" name="infrareds" output="screen"/>-->
+
+  <!--<node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot_teleop_key" output="screen">-->
+  <node pkg="tango_teleop" type="tango_teleop_key" name="tango_teleop_key" output="screen">
+    <!--<remap from="/cmd_vel" to="/twist"/>-->
+  </node>
+  
+  <node pkg="rqt_plot" type="rqt_plot" name="rqt_plot" output="screen"/>
+</launch>

@@ -92,7 +92,7 @@ class XboxNode():
 def main():
     rospy.init_node('tango_xbox')
     rate = rospy.Rate(10)
-    main_node = XboxNode("/cmd_vel", 0.2)
+    main_node = XboxNode("/cmd_vel", 0.35)
 
     while not rospy.is_shutdown():
         joy_sub = rospy.Subscriber("joy", Joy, main_node.joy_update)
